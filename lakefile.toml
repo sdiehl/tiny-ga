@@ -1,0 +1,38 @@
+name = "tiny-ga"
+version = "0.1.0"
+defaultTargets = ["TinyGA"]
+
+[[lean_lib]]
+name = "TinyGA"
+
+[[lean_exe]]
+name = "rotor"
+root = "Examples.Rotor"
+
+[[lean_exe]]
+name = "reflect"
+root = "Examples.Reflect"
+
+[[lean_exe]]
+name = "boost"
+root = "Examples.Boost"
+
+[[lean_exe]]
+name = "cga"
+root = "Examples.CGA"
+
+[[lean_exe]]
+name = "pauli"
+root = "Examples.Pauli"
+
+[[lean_exe]]
+name = "emfield"
+root = "Examples.EMField"
+
+[[lean_exe]]
+name = "pga"
+root = "Examples.PGA"
+
+[[lean_exe]]
+name = "kepler"
+root = "Examples.Kepler"
