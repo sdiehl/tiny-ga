@@ -11,7 +11,8 @@ def eccVec (r v : MV3) (k : Float) : MV3 :=
 def main : IO Unit := do
   IO.println "Kepler orbit in Cl(3,0): position obeys F = -k r/|r|³."
   IO.println "Angular momentum bivector L = r∧v and the Laplace-Runge-Lenz"
-  IO.println "vector ε = -(v⌋L) - k r̂ are conserved along the orbit.\n"
+  IO.println "vector ε = -(v⌋L) - k r̂ are conserved along the orbit."
+  IO.println ""
 
   let k : Float := 1.0
   let dt : Float := 0.005
@@ -32,6 +33,7 @@ def main : IO Unit := do
     v := v + dt * acc
     r := r + dt * v
 
-  IO.println "\nLRL vector points from focus to perihelion (here +x)."
+  IO.println ""
+  IO.println "LRL vector points from focus to perihelion (here +x)."
   IO.println "|L| ≈ 1.2 and |ε| ≈ 0.44 stay fixed; |r| oscillates between"
   IO.println "perihelion (1.0) and aphelion (a(1+e)/(1-e) of the ellipse)."

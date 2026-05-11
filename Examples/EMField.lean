@@ -23,10 +23,12 @@ def main : IO Unit := do
   let F :=
     Ex * bivE1 + Ey * bivE2 + Ez * bivE3 +
     Bx * bivB1 + By * bivB2 + Bz * bivB3
-  IO.println s!"\nF = {show4 F}"
+  IO.println ""
+  IO.println s!"F = {show4 F}"
 
   let F2 := F.gp F
-  IO.println s!"\nF·F = {show4 F2}"
+  IO.println ""
+  IO.println s!"F·F = {show4 F2}"
   IO.println "  scalar part   :  E² - B² (Lorentz invariant)"
   IO.println "  pseudoscalar  :  2 E·B   (Lorentz invariant)"
   IO.println s!"  E² - B² expected: {Ex*Ex+Ey*Ey+Ez*Ez - (Bx*Bx+By*By+Bz*Bz)}"
@@ -35,6 +37,8 @@ def main : IO Unit := do
   let xi : Float := 0.5
   let B := boost xi (MV.neg (g0.gp g1))
   let Fboost := MV.sandwich B F
-  IO.println s!"\nafter boost ξ=0.5 along x:\n  F' = {show4 Fboost}"
+  IO.println ""
+  IO.println "after boost ξ=0.5 along x:"
+  IO.println s!"  F' = {show4 Fboost}"
   let F'2 := Fboost.gp Fboost
   IO.println s!"  F'·F'.scalar = {(F'2).get 0}  (invariants unchanged)"

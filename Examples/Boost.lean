@@ -22,4 +22,5 @@ def main : IO Unit := do
   IO.println s!"  expected γ(2) = {(2.0:Float).cosh}, βγ(2) = {(2.0:Float).sinh}"
 
   let mass2 := (p'.gp p').get 0
-  IO.println s!"\np'·p' (Lorentz invariant)  = {mass2} (expected m² = {m*m})"
+  IO.println ""
+  IO.println s!"p'·p' (Lorentz invariant)  = {mass2} (expected m² = {m*m})"
