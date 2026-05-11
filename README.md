@@ -1,7 +1,7 @@
 # tiny-ga
 
-A minimal Geometric Algebra library in Lean 4. Largely inspired by the textbook
-*Geometric Algebra for Physicists*.
+A minimal Geometric Algebra library in Lean 4. About 400 lines of code. Largely
+inspired by the textbook *Geometric Algebra for Physicists*.
 
 ```
 lake build
