@@ -36,3 +36,7 @@ root = "Examples.PGA"
 [[lean_exe]]
 name = "kepler"
 root = "Examples.Kepler"
+
+[[lean_exe]]
+name = "catalog"
+root = "Examples.Catalog"
