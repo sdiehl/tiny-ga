@@ -18,6 +18,10 @@ name = "boost"
 root = "Examples.Boost"
 
 [[lean_exe]]
+name = "sta"
+root = "Examples.STA"
+
+[[lean_exe]]
 name = "cga"
 root = "Examples.CGA"
 
@@ -32,6 +36,10 @@ root = "Examples.EMField"
 [[lean_exe]]
 name = "pga"
 root = "Examples.PGA"
+
+[[lean_exe]]
+name = "hyp"
+root = "Examples.HYP"
 
 [[lean_exe]]
 name = "kepler"

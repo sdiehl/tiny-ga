@@ -6,4 +6,5 @@ import TinyGA.Cl3
 import TinyGA.STA
 import TinyGA.CGA
 import TinyGA.PGA
+import TinyGA.HYP
 import TinyGA.Theorems
