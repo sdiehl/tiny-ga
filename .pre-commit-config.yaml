@@ -11,6 +11,13 @@ repos:
 
   - repo: local
     hooks:
+      - id: dprint
+        name: dprint fmt
+        entry: dprint fmt
+        language: system
+        pass_filenames: false
+        files: '\.(md|toml)$'
+
       - id: lake-build
         name: lake build
         entry: lake build

@@ -1,13 +1,13 @@
 # tiny-ga
 
 A minimal Clifford algebra library in Lean 4. About 400 lines of code. Largely
-inspired by the textbook *Geometric Algebra for Physicists*.
+inspired by the textbook _Geometric Algebra for Physicists_.
 
-```
+```bash
 lake build
 ```
 
-```
+```bash
 lake exe rotor      # Cl(3,0,0) rotors and rotations
 lake exe reflect    # Cl(3,0,0) reflections via the sandwich product
 lake exe pauli      # Cl(3,0,0) Pauli/quaternion structure
@@ -36,7 +36,6 @@ lake exe oct        # Cl(8,0,0) 256-blade Euclidean algebra (Spin(8) and octonio
 - [Catalog.lean](Examples/Catalog.lean) - $\mathrm{Cl}(4,1,0)$ operator [catalog](catalog.md) by return type.
 - [CMA.lean](Examples/CMA.lean) - $\mathrm{Cl}(2,4,0)$ conformal Minkowski algebra, 64 blades.
 - [Oct.lean](Examples/Oct.lean) - $\mathrm{Cl}(8,0,0)$ rotors at 256 blades, Spin(8) triality, octonion-adjacent.
-
 
 ## License
 
