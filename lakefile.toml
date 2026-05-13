@@ -42,6 +42,14 @@ name = "hyp"
 root = "Examples.HYP"
 
 [[lean_exe]]
+name = "cma"
+root = "Examples.CMA"
+
+[[lean_exe]]
+name = "oct"
+root = "Examples.Oct"
+
+[[lean_exe]]
 name = "kepler"
 root = "Examples.Kepler"
 

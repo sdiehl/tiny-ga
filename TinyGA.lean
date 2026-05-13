@@ -7,4 +7,6 @@ import TinyGA.STA
 import TinyGA.CGA
 import TinyGA.PGA
 import TinyGA.HYP
+import TinyGA.CMA
+import TinyGA.Oct
 import TinyGA.Theorems
